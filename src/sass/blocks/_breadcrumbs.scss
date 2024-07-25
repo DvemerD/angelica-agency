@@ -1,0 +1,17 @@
+.breadcrumbs {
+  padding-top: 120px;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__item {
+    font-weight: 300;
+
+    &_active {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@import 'base/variables';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $bgr;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 24px;
+  color: $text;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $second-color;
+  }
+}
+
+address {
+  all: unset;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 24px;
+  color: $text;
+}
+
+object path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+section {
+  padding: 20px 0 100px;
+}
+
+ol {
+  list-style-type: decimal !important;
+  padding-left: 30px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1335px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.icon {
+  background-color: $second-color;
+  border-radius: 100%;
+  width: 87px;
+  height: 87px;
+  display: grid;
+  place-items: center;
+  transition: background-color .3s ease;
+  cursor: pointer;
+
+  path {
+    transition: fill .3s ease;
+  }
+
+  &:hover {
+    background-color: $white-color;
+
+    path {
+      fill: $second-color;
+    }
+  }
+}
+
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  height: 2px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: $white-color;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.5s ease-in, visibility 0.5s ease-in, z-index 0s 0.5s;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .form {
+    flex: 1;
+    flex-shrink: 0;
+  }
+}
+
+.overlay_active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in, visibility 0.5s ease-in, z-index 0s;
+}
+
+@media(max-width: 1400px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-bottom: 50px;
+  }
+}
+
+@import "blocks/buttons";
+@import "blocks/typography";
+@import "blocks/breadcrumbs";
+@import "blocks/form";
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/promo";
+@import "blocks/why-us";
+@import "blocks/about";
+@import "blocks/models";
+@import "blocks/offer";
+@import "blocks/reviews";
+@import "blocks/about-company";
+@import "blocks/articles";
+@import "blocks/contact-form";
+@import "blocks/news";
+@import "blocks/contacts";
+@import "blocks/article";
