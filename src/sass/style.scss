@@ -6,11 +6,13 @@ body {
 }
 
 body {
+  position: relative;
   background: $bgr;
   font-family: $font-family;
   font-weight: 400;
   font-size: 24px;
   color: $text;
+  overflow-x: hidden;
 }
 
 a {

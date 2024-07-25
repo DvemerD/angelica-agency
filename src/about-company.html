@@ -12,7 +12,8 @@
   <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#333333">
-  <meta name="description" content="Angelica Agency - ваше надёжное модельное агентство. С 2005 года мы помогаем моделям достигать успеха в карьере. Узнайте больше о нашей команде и миссии.">
+  <meta name="description"
+    content="Angelica Agency - ваше надёжное модельное агентство. С 2005 года мы помогаем моделям достигать успеха в карьере. Узнайте больше о нашей команде и миссии.">
 
   <link rel="stylesheet" href="css/libs/reset.min.css">
   <link rel="stylesheet" href="css/libs/fonts.min.css">
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="luxy">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -259,8 +260,7 @@
         <div class="footer__wrapper">
           <iframe class="footer__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.4720608787106!2d37.53131787657539!3d55.680780197536556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf11b49b72b%3A0xdb504ef01a431aab!2z0JvQtdC90LjQvdGB0LrQuNC5INC_0YAt0YIuLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1721471013305!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="footer__content">
             <div class="footer__items">
               <div class="footer__item">
@@ -347,47 +347,48 @@
         </div>
       </div>
     </footer>
+  </div>
 
-    <div class="overlay overlay-popup">
-      <div class="popup">
-        <form class="form form__send">
-          <div class="form__wrapper">
-            <button type="button" class="form__btn-close btn__close">
-              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8.49331 5.2965L17.5 14.3032L26.46 5.34317C26.6579 5.13251 26.8963 4.96399 27.1609 4.84772C27.4256 4.73144 27.7109 4.6698 28 4.6665C28.6188 4.6665 29.2123 4.91234 29.6499 5.34992C30.0875 5.78751 30.3333 6.381 30.3333 6.99984C30.3387 7.28591 30.2857 7.57007 30.1773 7.83489C30.069 8.09971 29.9077 8.3396 29.7033 8.53984L20.6266 17.4998L29.7033 26.5765C30.0879 26.9527 30.3134 27.4622 30.3333 27.9998C30.3333 28.6187 30.0875 29.2122 29.6499 29.6498C29.2123 30.0873 28.6188 30.3332 28 30.3332C27.7026 30.3455 27.4059 30.2959 27.1287 30.1874C26.8516 30.079 26.6 29.9141 26.39 29.7032L17.5 20.6965L8.51664 29.6798C8.31949 29.8835 8.08396 30.046 7.82364 30.1582C7.56333 30.2703 7.28339 30.3298 6.99997 30.3332C6.38113 30.3332 5.78764 30.0873 5.35006 29.6498C4.91247 29.2122 4.66664 28.6187 4.66664 27.9998C4.6612 27.7138 4.71428 27.4296 4.82261 27.1648C4.93095 26.9 5.09226 26.6601 5.29664 26.4598L14.3733 17.4998L5.29664 8.42317C4.91207 8.04694 4.68657 7.53747 4.66664 6.99984C4.66664 6.381 4.91247 5.78751 5.35006 5.34992C5.78764 4.91234 6.38113 4.6665 6.99997 4.6665C7.55997 4.6735 8.09664 4.89984 8.49331 5.2965Z"
-                  fill="white" />
-              </svg>
-            </button>
-            <input type="text" name="name" class="form__input input" placeholder="Ваше имя">
-            <input type="number" name="phone" class="form__input input" placeholder="Телефон">
-            <input type="text" name="comment" class="form__input input" placeholder="Коментарий">
-            <p class="form__error"></p>
-          </div>
-          <button class="form__btn btn form__submit" type="submit">Отправить</button>
-        </form>
-      </div>
+  <div class="overlay overlay-popup">
+    <div class="popup">
+      <form class="form form__send">
+        <div class="form__wrapper">
+          <button type="button" class="form__btn-close btn__close">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.49331 5.2965L17.5 14.3032L26.46 5.34317C26.6579 5.13251 26.8963 4.96399 27.1609 4.84772C27.4256 4.73144 27.7109 4.6698 28 4.6665C28.6188 4.6665 29.2123 4.91234 29.6499 5.34992C30.0875 5.78751 30.3333 6.381 30.3333 6.99984C30.3387 7.28591 30.2857 7.57007 30.1773 7.83489C30.069 8.09971 29.9077 8.3396 29.7033 8.53984L20.6266 17.4998L29.7033 26.5765C30.0879 26.9527 30.3134 27.4622 30.3333 27.9998C30.3333 28.6187 30.0875 29.2122 29.6499 29.6498C29.2123 30.0873 28.6188 30.3332 28 30.3332C27.7026 30.3455 27.4059 30.2959 27.1287 30.1874C26.8516 30.079 26.6 29.9141 26.39 29.7032L17.5 20.6965L8.51664 29.6798C8.31949 29.8835 8.08396 30.046 7.82364 30.1582C7.56333 30.2703 7.28339 30.3298 6.99997 30.3332C6.38113 30.3332 5.78764 30.0873 5.35006 29.6498C4.91247 29.2122 4.66664 28.6187 4.66664 27.9998C4.6612 27.7138 4.71428 27.4296 4.82261 27.1648C4.93095 26.9 5.09226 26.6601 5.29664 26.4598L14.3733 17.4998L5.29664 8.42317C4.91207 8.04694 4.68657 7.53747 4.66664 6.99984C4.66664 6.381 4.91247 5.78751 5.35006 5.34992C5.78764 4.91234 6.38113 4.6665 6.99997 4.6665C7.55997 4.6735 8.09664 4.89984 8.49331 5.2965Z"
+                fill="white" />
+            </svg>
+          </button>
+          <input type="text" name="name" class="form__input input" placeholder="Ваше имя">
+          <input type="number" name="phone" class="form__input input" placeholder="Телефон">
+          <input type="text" name="comment" class="form__input input" placeholder="Коментарий">
+          <p class="form__error"></p>
+        </div>
+        <button class="form__btn btn form__submit" type="submit">Отправить</button>
+      </form>
     </div>
-    <div class="overlay overlay-popup-review">
-      <div class="popup">
-        <form class="form form__review">
-          <div class="form__wrapper">
-            <button type="button" class="form__btn-close btn__close">
-              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8.49331 5.2965L17.5 14.3032L26.46 5.34317C26.6579 5.13251 26.8963 4.96399 27.1609 4.84772C27.4256 4.73144 27.7109 4.6698 28 4.6665C28.6188 4.6665 29.2123 4.91234 29.6499 5.34992C30.0875 5.78751 30.3333 6.381 30.3333 6.99984C30.3387 7.28591 30.2857 7.57007 30.1773 7.83489C30.069 8.09971 29.9077 8.3396 29.7033 8.53984L20.6266 17.4998L29.7033 26.5765C30.0879 26.9527 30.3134 27.4622 30.3333 27.9998C30.3333 28.6187 30.0875 29.2122 29.6499 29.6498C29.2123 30.0873 28.6188 30.3332 28 30.3332C27.7026 30.3455 27.4059 30.2959 27.1287 30.1874C26.8516 30.079 26.6 29.9141 26.39 29.7032L17.5 20.6965L8.51664 29.6798C8.31949 29.8835 8.08396 30.046 7.82364 30.1582C7.56333 30.2703 7.28339 30.3298 6.99997 30.3332C6.38113 30.3332 5.78764 30.0873 5.35006 29.6498C4.91247 29.2122 4.66664 28.6187 4.66664 27.9998C4.6612 27.7138 4.71428 27.4296 4.82261 27.1648C4.93095 26.9 5.09226 26.6601 5.29664 26.4598L14.3733 17.4998L5.29664 8.42317C4.91207 8.04694 4.68657 7.53747 4.66664 6.99984C4.66664 6.381 4.91247 5.78751 5.35006 5.34992C5.78764 4.91234 6.38113 4.6665 6.99997 4.6665C7.55997 4.6735 8.09664 4.89984 8.49331 5.2965Z"
-                  fill="white" />
-              </svg>
-            </button>
-            <input type="text" name="name" class="form__input input" placeholder="Ваше имя">
-            <input type="text" name="review" class="form__input input" placeholder="Отзыв">
-          </div>
-          <button class="form__btn btn form__submit" type="submit">Отправить</button>
-        </form>
-      </div>
+  </div>
+  <div class="overlay overlay-popup-review">
+    <div class="popup">
+      <form class="form form__review">
+        <div class="form__wrapper">
+          <button type="button" class="form__btn-close btn__close">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.49331 5.2965L17.5 14.3032L26.46 5.34317C26.6579 5.13251 26.8963 4.96399 27.1609 4.84772C27.4256 4.73144 27.7109 4.6698 28 4.6665C28.6188 4.6665 29.2123 4.91234 29.6499 5.34992C30.0875 5.78751 30.3333 6.381 30.3333 6.99984C30.3387 7.28591 30.2857 7.57007 30.1773 7.83489C30.069 8.09971 29.9077 8.3396 29.7033 8.53984L20.6266 17.4998L29.7033 26.5765C30.0879 26.9527 30.3134 27.4622 30.3333 27.9998C30.3333 28.6187 30.0875 29.2122 29.6499 29.6498C29.2123 30.0873 28.6188 30.3332 28 30.3332C27.7026 30.3455 27.4059 30.2959 27.1287 30.1874C26.8516 30.079 26.6 29.9141 26.39 29.7032L17.5 20.6965L8.51664 29.6798C8.31949 29.8835 8.08396 30.046 7.82364 30.1582C7.56333 30.2703 7.28339 30.3298 6.99997 30.3332C6.38113 30.3332 5.78764 30.0873 5.35006 29.6498C4.91247 29.2122 4.66664 28.6187 4.66664 27.9998C4.6612 27.7138 4.71428 27.4296 4.82261 27.1648C4.93095 26.9 5.09226 26.6601 5.29664 26.4598L14.3733 17.4998L5.29664 8.42317C4.91207 8.04694 4.68657 7.53747 4.66664 6.99984C4.66664 6.381 4.91247 5.78751 5.35006 5.34992C5.78764 4.91234 6.38113 4.6665 6.99997 4.6665C7.55997 4.6735 8.09664 4.89984 8.49331 5.2965Z"
+                fill="white" />
+            </svg>
+          </button>
+          <input type="text" name="name" class="form__input input" placeholder="Ваше имя">
+          <input type="text" name="review" class="form__input input" placeholder="Отзыв">
+        </div>
+        <button class="form__btn btn form__submit" type="submit">Отправить</button>
+      </form>
     </div>
   </div>
 
+  <script src="js/libs/luxy.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js" type="module"></script>
 </body>
